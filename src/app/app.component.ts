@@ -7,7 +7,8 @@ import { Component, ElementRef, ViewChild } from '@angular/core';
 })
 export class AppComponent {
   @ViewChild('f') form: ElementRef;
-  defaultQuestion = 'pet';
+  defaultQuestion = 'teacher';
+  answer = '';
 
   suggestUserName() {
     const suggestedName = 'Superuser';
