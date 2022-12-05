@@ -1,5 +1,4 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
-import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
@@ -8,6 +7,7 @@ import { NgForm } from '@angular/forms';
 })
 export class AppComponent {
   @ViewChild('f') form: ElementRef;
+  defaultQuestion = 'pet';
 
   suggestUserName() {
     const suggestedName = 'Superuser';
